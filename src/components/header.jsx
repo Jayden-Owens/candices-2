@@ -6,9 +6,6 @@ export const Header = (props) => {
           <div className='container'>
             <div className='row'>
               <div centered className='col-md-8 intro-text'>
-                <h1>
-
-                </h1>
 
               </div>
             </div>
