@@ -20,7 +20,7 @@ export const Contact = (props) => {
     console.log(name, email, message)
     emailjs
       .sendForm(
-        'YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', e.target, 'YOUR_USER_ID'
+        'millerscollection', 'Portfolio', e.target, 'user_EtXW6MpURf6VmoLWceaIV'
       )
       .then(
         (result) => {
@@ -64,6 +64,20 @@ export const Contact = (props) => {
                   <div className='col-md-6'>
                     <div className='form-group'>
                       <input
+                        type='text'
+                        id='Phone'
+                        name='phone'
+                        className='form-control'
+                        placeholder='Phone'
+                        required
+                        onChange={handleChange}
+                      />
+                      <p className='help-block text-danger'></p>
+                    </div>
+                    </div>
+                  <div className='col-md-6'>
+                    <div className='form-group'>
+                      <input
                         type='email'
                         id='email'
                         name='email'
@@ -78,8 +92,8 @@ export const Contact = (props) => {
                 </div>
                 <div className='form-group'>
                   <textarea
-                    name='message'
-                    id='message'
+                    name='description'
+                    id='description'
                     className='form-control'
                     rows='4'
                     placeholder='Message'
@@ -98,12 +112,6 @@ export const Contact = (props) => {
           <div className='col-md-3 col-md-offset-1 contact-info'>
             <div className='contact-item'>
               <h3>Contact Info</h3>
-              <p>
-                <span>
-                  <i className='fa fa-map-marker'></i> Address
-                </span>
-                {props.data ? props.data.address : 'loading'}
-              </p>
             </div>
             <div className='contact-item'>
               <p>
@@ -127,34 +135,20 @@ export const Contact = (props) => {
               <div className='social'>
                 <ul>
                   <li>
-                    <a href={props.data ? props.data.facebook : '/'}>
-                      <i className='fa fa-facebook'></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href={props.data ? props.data.twitter : '/'}>
-                      <i className='fa fa-twitter'></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href={props.data ? props.data.youtube : '/'}>
-                      <i className='fa fa-youtube'></i>
-                    </a>
+                  <a
+
+                  href='https://www.instagram.com/millerscollections/'
+                  className='btn btn-custom btn-lg page-scroll'
+                >
+                  <span style={{fontSize: '3em', color: "Tomato"}}>
+                    <i class="fa fa-camera"></i>
+                  </span>
+                </a>{' '}
                   </li>
                 </ul>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-      <div id='footer'>
-        <div className='container text-center'>
-          <p>
-            &copy; 2020 Issaaf Kattan React Land Page Template. Design by{' '}
-            <a href='http://www.templatewire.com' rel='nofollow'>
-              TemplateWire
-            </a>
-          </p>
         </div>
       </div>
     </div>

@@ -545,7 +545,7 @@
 .fa-twitter-square:before {
   content: "\f081";
 }
-.fa-facebook-square:before {
+.fa-instgram-square:before {
   content: "\f082";
 }
 .fa-camera-retro:before {
@@ -615,8 +615,8 @@
 .fa-twitter:before {
   content: "\f099";
 }
-.fa-facebook-f:before,
-.fa-facebook:before {
+.fa-instgram-f:before,
+.fa-instgram:before {
   content: "\f09a";
 }
 .fa-github:before {
@@ -1765,7 +1765,7 @@
 .fa-neuter:before {
   content: "\f22c";
 }
-.fa-facebook-official:before {
+.fa-instagram-official:before {
   content: "\f230";
 }
 .fa-pinterest-p:before {
